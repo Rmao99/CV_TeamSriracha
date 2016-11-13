@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rmao/CV_TeamSriracha/src/AppConfig.hpp
+string
+-
+
+/home/rmao/CV_TeamSriracha/src/CmdLineInterface.hpp
+AppConfig.hpp
+/home/rmao/CV_TeamSriracha/src/AppConfig.hpp
+
+/home/rmao/CV_TeamSriracha/src/VideoDevice.hpp
+opencv2/opencv.hpp
+-
+
+/home/rmao/CV_TeamSriracha/src/cv_camera_test.cpp
+VideoDevice.hpp
+/home/rmao/CV_TeamSriracha/src/VideoDevice.hpp
+AppConfig.hpp
+/home/rmao/CV_TeamSriracha/src/AppConfig.hpp
+CmdLineInterface.hpp
+/home/rmao/CV_TeamSriracha/src/CmdLineInterface.hpp
+
