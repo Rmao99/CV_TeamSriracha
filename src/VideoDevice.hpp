@@ -19,4 +19,6 @@ class VideoDevice
 		int isReady;
 		bool isInitialized;
 
-}
+};
+
+#endif
