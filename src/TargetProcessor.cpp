@@ -2,18 +2,18 @@
 #include "TargetProcessor.hpp"
 #include "Target.hpp"
 
-TargetProcessor::TargetProcessor(double realWidth, double focalLength, double imageWidth, double imageHeight) {
-  m_realWidth = realWidth;
+TargetProcessor::TargetProcessor(double focalLength, double imageWidth, double imageHeight) {
   m_focalLength = focalLength;
   m_imageWidth = imageWidth;
   m_imageHeight = imageHeight;
 }
 
-void TargetProcessor::loadTarget(Target *target) {
+void TargetProcessor::loadTarget(Target *target, double realWidth) {
   width = target->findWidth();
   height = target->findHeight();
   centerX = target->findCenterX();
   centerY = target->findCenterY();
+  m_realWidth = realWidth;
 }
 
 double TargetProcessor::calcDistance() {

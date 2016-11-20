@@ -8,8 +8,8 @@
 class TargetProcessor
 {
 public:
-  TargetProcessor(double realWidth, double focalLength=1.5, double imageWidth=480.0, double imageHeight=240.0);
-  void loadTarget(Target *target);
+  TargetProcessor(double focalLength=1.5, double imageWidth=480.0, double imageHeight=240.0);
+  void loadTarget(Target *target, double realWidth);
   double calcDistance();
   double calcAzimuthX();
   double calcAzimuthY();

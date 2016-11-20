@@ -1,5 +1,5 @@
 find_package(OpenCV REQUIRED)
 find_package(Boost REQUIRED COMPONENTS system thread)
 
-add_executable(cv_camera_test cv_camera_test.cpp VideoDevice.cpp AppConfig.cpp CmdLineInterface.cpp)
-target_link_libraries(cv_camera_test ${OpenCV_LIBS} ${Boost_LIBRARIES})
+add_executable(CV_TeamSriracha_Test cv-sriracha.cpp VideoDevice.cpp AppConfig.cpp CmdLineInterface.cpp TargetDetector.cpp Target.cpp TargetProcessor.cpp)
+target_link_libraries(CV_TeamSriracha_Test ${OpenCV_LIBS} ${Boost_LIBRARIES})

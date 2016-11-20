@@ -3,11 +3,12 @@
 #include "TargetDetector.hpp"
 using namespace cv;
 
-TargetDetector::TargetDetector(cv::Mat img) {
-  m_img = img;
+TargetDetector::TargetDetector() {
+
 }
 
-std::vector<Point> TargetDetector::getTarget() {
+std::vector<Point> TargetDetector::getTarget(cv::Mat img, int corners) {
+  m_img = img;
   Mat img_hsv;
   cvtColor(m_img, img_hsv, CV_BGR2HSV);
   std::vector<cv::Mat> channels;
@@ -36,13 +37,12 @@ std::vector<Point> TargetDetector::getTarget() {
   for(int i = 0; i < contours.size(); i++) {
 
     approxPolyDP(contours[i], approxContour, cv::arcLength(cv::Mat(contours.at(i)), true) * 0.02, true);
-
-    if (approxContour.size() == 4 && contours[i][1].y >= 240) {
-      std::cout << "contour" << contours[i][1].y << "\n";
-      break;
+// 240 should be changed after testing
+    if ((approxContour.size() == corners) || ((corners == 4) && (contours[i][1].y >= 240))) {
+      std::cout << "y-coordinate of first contour: " << contours[i][1].y << "\n";
+      return approxContour;
     }
 
   }
-
-  return approxContour;
+  return std::vector<Point>();
 }

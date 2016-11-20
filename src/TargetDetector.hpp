@@ -7,8 +7,8 @@
 class TargetDetector
 {
 public:
-  TargetDetector(cv::Mat img);
-  std::vector<cv::Point> getTarget();
+  TargetDetector();
+  std::vector<cv::Point> getTarget(cv::Mat img, int corners);
 private:
   cv::Mat m_img;
 };
