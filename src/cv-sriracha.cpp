@@ -66,12 +66,14 @@ int main(int argc, char* argv[])
 	            std::cout << "Image Processed by Target Detector" << std::endl;
 
 	        bool foundCross = false;
-	        if (targetC != NULL)
+
+	        if ((*targetC).m_contour.size() != 0)
 	        {
 	            foundCross = true;
 	        }
+
 					bool foundHighGoal = false;
-	        if (targetS != NULL)
+	        if ((*targetS).m_contour.size() != 0)
 	        {
 	            foundHighGoal = true;
 	        }
@@ -81,7 +83,7 @@ int main(int argc, char* argv[])
 	        {
 
 
-	            std::cout <<"Target was found " << std::endl;
+	            std::cout <<"Cross was found " << std::endl;
 
 	            if(config.getIsDebug())
 	                std::cout << "Image Being Processed" << std::endl;
@@ -151,7 +153,7 @@ int main(int argc, char* argv[])
 					{
 
 
-							std::cout <<"Target was found " << std::endl;
+							std::cout <<"High goal was found " << std::endl;
 
 							if(config.getIsDebug())
 									std::cout << "Image Being Processed" << std::endl;
