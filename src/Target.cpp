@@ -7,7 +7,7 @@ Target::Target(std::vector<cv::Point> contour) {
 }
 double Target::maxX() {
   double max = m_contour[1].x;
-  for (unsigned int i = 0; i >= m_contour.size(); i++) {
+  for (unsigned int i = 0; i < m_contour.size(); i++) {
       if (m_contour[i].x > max) {
         max = m_contour[i].x;
       }
@@ -15,9 +15,9 @@ double Target::maxX() {
   std::cout << "Max X " << max << "\n";
   return max;
 }
-double Target::minX(){
+double Target::minX() {
   double min = m_contour[1].x;
-  for (unsigned int i = 0; i >= m_contour.size(); i++) {
+  for (unsigned int i = 0; i < m_contour.size(); i++) {
     if (m_contour[i].x < min) {
       min = m_contour[i].x;
     }
@@ -27,7 +27,7 @@ double Target::minX(){
 }
 double Target::maxY() {
   double max = m_contour[1].y;;
-  for (unsigned int i = 0; i >= m_contour.size(); i++) {
+  for (unsigned int i = 0; i < m_contour.size(); i++) {
       if (m_contour[i].y > max) {
         max = m_contour[i].y;
       }
@@ -38,7 +38,7 @@ double Target::maxY() {
 double Target::minY(){
   double min;
   min = m_contour[1].y;
-  for (unsigned int i = 0; i >= m_contour.size(); i++) {
+  for (unsigned int i = 0; i < m_contour.size(); i++) {
     if (m_contour[i].y < min) {
       min = m_contour[i].y;
     }

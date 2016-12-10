@@ -111,19 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/CV_TeamSriracha_Test.dir/rule:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/CV_TeamSriracha_Test.dir/rule
-.PHONY : src/CMakeFiles/CV_TeamSriracha_Test.dir/rule
+src/CMakeFiles/CV_TeamSriracha.dir/rule:
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/CV_TeamSriracha.dir/rule
+.PHONY : src/CMakeFiles/CV_TeamSriracha.dir/rule
 
 # Convenience name for target.
-CV_TeamSriracha_Test: src/CMakeFiles/CV_TeamSriracha_Test.dir/rule
+CV_TeamSriracha: src/CMakeFiles/CV_TeamSriracha.dir/rule
 
-.PHONY : CV_TeamSriracha_Test
+.PHONY : CV_TeamSriracha
 
 # fast build rule for target.
-CV_TeamSriracha_Test/fast:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/build
-.PHONY : CV_TeamSriracha_Test/fast
+CV_TeamSriracha/fast:
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/build
+.PHONY : CV_TeamSriracha/fast
 
 AppConfig.o: AppConfig.cpp.o
 
@@ -131,7 +131,7 @@ AppConfig.o: AppConfig.cpp.o
 
 # target to build an object file
 AppConfig.cpp.o:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/AppConfig.cpp.o
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/AppConfig.cpp.o
 .PHONY : AppConfig.cpp.o
 
 AppConfig.i: AppConfig.cpp.i
@@ -140,7 +140,7 @@ AppConfig.i: AppConfig.cpp.i
 
 # target to preprocess a source file
 AppConfig.cpp.i:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/AppConfig.cpp.i
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/AppConfig.cpp.i
 .PHONY : AppConfig.cpp.i
 
 AppConfig.s: AppConfig.cpp.s
@@ -149,7 +149,7 @@ AppConfig.s: AppConfig.cpp.s
 
 # target to generate assembly for a file
 AppConfig.cpp.s:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/AppConfig.cpp.s
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/AppConfig.cpp.s
 .PHONY : AppConfig.cpp.s
 
 CmdLineInterface.o: CmdLineInterface.cpp.o
@@ -158,7 +158,7 @@ CmdLineInterface.o: CmdLineInterface.cpp.o
 
 # target to build an object file
 CmdLineInterface.cpp.o:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/CmdLineInterface.cpp.o
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/CmdLineInterface.cpp.o
 .PHONY : CmdLineInterface.cpp.o
 
 CmdLineInterface.i: CmdLineInterface.cpp.i
@@ -167,7 +167,7 @@ CmdLineInterface.i: CmdLineInterface.cpp.i
 
 # target to preprocess a source file
 CmdLineInterface.cpp.i:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/CmdLineInterface.cpp.i
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/CmdLineInterface.cpp.i
 .PHONY : CmdLineInterface.cpp.i
 
 CmdLineInterface.s: CmdLineInterface.cpp.s
@@ -176,7 +176,7 @@ CmdLineInterface.s: CmdLineInterface.cpp.s
 
 # target to generate assembly for a file
 CmdLineInterface.cpp.s:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/CmdLineInterface.cpp.s
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/CmdLineInterface.cpp.s
 .PHONY : CmdLineInterface.cpp.s
 
 Target.o: Target.cpp.o
@@ -185,7 +185,7 @@ Target.o: Target.cpp.o
 
 # target to build an object file
 Target.cpp.o:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/Target.cpp.o
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/Target.cpp.o
 .PHONY : Target.cpp.o
 
 Target.i: Target.cpp.i
@@ -194,7 +194,7 @@ Target.i: Target.cpp.i
 
 # target to preprocess a source file
 Target.cpp.i:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/Target.cpp.i
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/Target.cpp.i
 .PHONY : Target.cpp.i
 
 Target.s: Target.cpp.s
@@ -203,7 +203,7 @@ Target.s: Target.cpp.s
 
 # target to generate assembly for a file
 Target.cpp.s:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/Target.cpp.s
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/Target.cpp.s
 .PHONY : Target.cpp.s
 
 TargetDetector.o: TargetDetector.cpp.o
@@ -212,7 +212,7 @@ TargetDetector.o: TargetDetector.cpp.o
 
 # target to build an object file
 TargetDetector.cpp.o:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/TargetDetector.cpp.o
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/TargetDetector.cpp.o
 .PHONY : TargetDetector.cpp.o
 
 TargetDetector.i: TargetDetector.cpp.i
@@ -221,7 +221,7 @@ TargetDetector.i: TargetDetector.cpp.i
 
 # target to preprocess a source file
 TargetDetector.cpp.i:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/TargetDetector.cpp.i
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/TargetDetector.cpp.i
 .PHONY : TargetDetector.cpp.i
 
 TargetDetector.s: TargetDetector.cpp.s
@@ -230,7 +230,7 @@ TargetDetector.s: TargetDetector.cpp.s
 
 # target to generate assembly for a file
 TargetDetector.cpp.s:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/TargetDetector.cpp.s
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/TargetDetector.cpp.s
 .PHONY : TargetDetector.cpp.s
 
 TargetProcessor.o: TargetProcessor.cpp.o
@@ -239,7 +239,7 @@ TargetProcessor.o: TargetProcessor.cpp.o
 
 # target to build an object file
 TargetProcessor.cpp.o:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/TargetProcessor.cpp.o
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/TargetProcessor.cpp.o
 .PHONY : TargetProcessor.cpp.o
 
 TargetProcessor.i: TargetProcessor.cpp.i
@@ -248,7 +248,7 @@ TargetProcessor.i: TargetProcessor.cpp.i
 
 # target to preprocess a source file
 TargetProcessor.cpp.i:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/TargetProcessor.cpp.i
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/TargetProcessor.cpp.i
 .PHONY : TargetProcessor.cpp.i
 
 TargetProcessor.s: TargetProcessor.cpp.s
@@ -257,7 +257,7 @@ TargetProcessor.s: TargetProcessor.cpp.s
 
 # target to generate assembly for a file
 TargetProcessor.cpp.s:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/TargetProcessor.cpp.s
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/TargetProcessor.cpp.s
 .PHONY : TargetProcessor.cpp.s
 
 VideoDevice.o: VideoDevice.cpp.o
@@ -266,7 +266,7 @@ VideoDevice.o: VideoDevice.cpp.o
 
 # target to build an object file
 VideoDevice.cpp.o:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/VideoDevice.cpp.o
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/VideoDevice.cpp.o
 .PHONY : VideoDevice.cpp.o
 
 VideoDevice.i: VideoDevice.cpp.i
@@ -275,7 +275,7 @@ VideoDevice.i: VideoDevice.cpp.i
 
 # target to preprocess a source file
 VideoDevice.cpp.i:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/VideoDevice.cpp.i
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/VideoDevice.cpp.i
 .PHONY : VideoDevice.cpp.i
 
 VideoDevice.s: VideoDevice.cpp.s
@@ -284,7 +284,7 @@ VideoDevice.s: VideoDevice.cpp.s
 
 # target to generate assembly for a file
 VideoDevice.cpp.s:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/VideoDevice.cpp.s
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/VideoDevice.cpp.s
 .PHONY : VideoDevice.cpp.s
 
 cv-sriracha.o: cv-sriracha.cpp.o
@@ -293,7 +293,7 @@ cv-sriracha.o: cv-sriracha.cpp.o
 
 # target to build an object file
 cv-sriracha.cpp.o:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/cv-sriracha.cpp.o
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/cv-sriracha.cpp.o
 .PHONY : cv-sriracha.cpp.o
 
 cv-sriracha.i: cv-sriracha.cpp.i
@@ -302,7 +302,7 @@ cv-sriracha.i: cv-sriracha.cpp.i
 
 # target to preprocess a source file
 cv-sriracha.cpp.i:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/cv-sriracha.cpp.i
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/cv-sriracha.cpp.i
 .PHONY : cv-sriracha.cpp.i
 
 cv-sriracha.s: cv-sriracha.cpp.s
@@ -311,7 +311,7 @@ cv-sriracha.s: cv-sriracha.cpp.s
 
 # target to generate assembly for a file
 cv-sriracha.cpp.s:
-	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/cv-sriracha.cpp.s
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/cv-sriracha.cpp.s
 .PHONY : cv-sriracha.cpp.s
 
 # Help Target
@@ -322,7 +322,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... CV_TeamSriracha_Test"
+	@echo "... CV_TeamSriracha"
 	@echo "... AppConfig.o"
 	@echo "... AppConfig.i"
 	@echo "... AppConfig.s"

@@ -63,12 +63,12 @@ CMAKE_BINARY_DIR = /home/option16/Documents/CV_TeamSriracha/build
 # Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
-src/all: src/CMakeFiles/CV_TeamSriracha_Test.dir/all
+src/all: src/CMakeFiles/CV_TeamSriracha.dir/all
 
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
-src/clean: src/CMakeFiles/CV_TeamSriracha_Test.dir/clean
+src/clean: src/CMakeFiles/CV_TeamSriracha.dir/clean
 
 .PHONY : src/clean
 
@@ -78,39 +78,39 @@ src/preinstall:
 .PHONY : src/preinstall
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/CV_TeamSriracha_Test.dir
+# Target rules for target src/CMakeFiles/CV_TeamSriracha.dir
 
 # All Build rule for target.
-src/CMakeFiles/CV_TeamSriracha_Test.dir/all:
-	$(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/depend
-	$(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/option16/Documents/CV_TeamSriracha/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target CV_TeamSriracha_Test"
-.PHONY : src/CMakeFiles/CV_TeamSriracha_Test.dir/all
+src/CMakeFiles/CV_TeamSriracha.dir/all:
+	$(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/depend
+	$(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/option16/Documents/CV_TeamSriracha/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target CV_TeamSriracha"
+.PHONY : src/CMakeFiles/CV_TeamSriracha.dir/all
 
 # Include target in all.
-all: src/CMakeFiles/CV_TeamSriracha_Test.dir/all
+all: src/CMakeFiles/CV_TeamSriracha.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/CV_TeamSriracha_Test.dir/rule: cmake_check_build_system
+src/CMakeFiles/CV_TeamSriracha.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/option16/Documents/CV_TeamSriracha/build/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/CV_TeamSriracha_Test.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/CV_TeamSriracha.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/option16/Documents/CV_TeamSriracha/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/CV_TeamSriracha_Test.dir/rule
+.PHONY : src/CMakeFiles/CV_TeamSriracha.dir/rule
 
 # Convenience name for target.
-CV_TeamSriracha_Test: src/CMakeFiles/CV_TeamSriracha_Test.dir/rule
+CV_TeamSriracha: src/CMakeFiles/CV_TeamSriracha.dir/rule
 
-.PHONY : CV_TeamSriracha_Test
-
-# clean rule for target.
-src/CMakeFiles/CV_TeamSriracha_Test.dir/clean:
-	$(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/clean
-.PHONY : src/CMakeFiles/CV_TeamSriracha_Test.dir/clean
+.PHONY : CV_TeamSriracha
 
 # clean rule for target.
-clean: src/CMakeFiles/CV_TeamSriracha_Test.dir/clean
+src/CMakeFiles/CV_TeamSriracha.dir/clean:
+	$(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/clean
+.PHONY : src/CMakeFiles/CV_TeamSriracha.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/CV_TeamSriracha.dir/clean
 
 .PHONY : clean
 

@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CV_TeamSriracha_Test
+# Target rules for targets named CV_TeamSriracha
 
 # Build rule for target.
-CV_TeamSriracha_Test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 CV_TeamSriracha_Test
-.PHONY : CV_TeamSriracha_Test
+CV_TeamSriracha: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 CV_TeamSriracha
+.PHONY : CV_TeamSriracha
 
 # fast build rule for target.
-CV_TeamSriracha_Test/fast:
-	$(MAKE) -f src/CMakeFiles/CV_TeamSriracha_Test.dir/build.make src/CMakeFiles/CV_TeamSriracha_Test.dir/build
-.PHONY : CV_TeamSriracha_Test/fast
+CV_TeamSriracha/fast:
+	$(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/build
+.PHONY : CV_TeamSriracha/fast
 
 # Help Target
 help:
@@ -131,7 +131,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... CV_TeamSriracha_Test"
+	@echo "... CV_TeamSriracha"
 .PHONY : help
 
 
