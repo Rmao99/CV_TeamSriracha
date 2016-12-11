@@ -8,6 +8,9 @@ src/CMakeFiles/CV_TeamSriracha.dir/CmdLineInterface.cpp.o
  /home/option16/Documents/CV_TeamSriracha/src/AppConfig.hpp
  /home/option16/Documents/CV_TeamSriracha/src/CmdLineInterface.cpp
  /home/option16/Documents/CV_TeamSriracha/src/CmdLineInterface.hpp
+src/CMakeFiles/CV_TeamSriracha.dir/NetworkController.cpp.o
+ /home/option16/Documents/CV_TeamSriracha/src/NetworkController.cpp
+ /home/option16/Documents/CV_TeamSriracha/src/NetworkController.hpp
 src/CMakeFiles/CV_TeamSriracha.dir/Target.cpp.o
  /home/option16/Documents/CV_TeamSriracha/src/Target.cpp
  /home/option16/Documents/CV_TeamSriracha/src/Target.hpp
@@ -24,6 +27,7 @@ src/CMakeFiles/CV_TeamSriracha.dir/VideoDevice.cpp.o
 src/CMakeFiles/CV_TeamSriracha.dir/cv-sriracha.cpp.o
  /home/option16/Documents/CV_TeamSriracha/src/AppConfig.hpp
  /home/option16/Documents/CV_TeamSriracha/src/CmdLineInterface.hpp
+ /home/option16/Documents/CV_TeamSriracha/src/NetworkController.hpp
  /home/option16/Documents/CV_TeamSriracha/src/Target.hpp
  /home/option16/Documents/CV_TeamSriracha/src/TargetDetector.hpp
  /home/option16/Documents/CV_TeamSriracha/src/TargetProcessor.hpp

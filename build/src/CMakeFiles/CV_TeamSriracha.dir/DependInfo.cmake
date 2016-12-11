@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/option16/Documents/CV_TeamSriracha/src/AppConfig.cpp" "/home/option16/Documents/CV_TeamSriracha/build/src/CMakeFiles/CV_TeamSriracha.dir/AppConfig.cpp.o"
   "/home/option16/Documents/CV_TeamSriracha/src/CmdLineInterface.cpp" "/home/option16/Documents/CV_TeamSriracha/build/src/CMakeFiles/CV_TeamSriracha.dir/CmdLineInterface.cpp.o"
+  "/home/option16/Documents/CV_TeamSriracha/src/NetworkController.cpp" "/home/option16/Documents/CV_TeamSriracha/build/src/CMakeFiles/CV_TeamSriracha.dir/NetworkController.cpp.o"
   "/home/option16/Documents/CV_TeamSriracha/src/Target.cpp" "/home/option16/Documents/CV_TeamSriracha/build/src/CMakeFiles/CV_TeamSriracha.dir/Target.cpp.o"
   "/home/option16/Documents/CV_TeamSriracha/src/TargetDetector.cpp" "/home/option16/Documents/CV_TeamSriracha/build/src/CMakeFiles/CV_TeamSriracha.dir/TargetDetector.cpp.o"
   "/home/option16/Documents/CV_TeamSriracha/src/TargetProcessor.cpp" "/home/option16/Documents/CV_TeamSriracha/build/src/CMakeFiles/CV_TeamSriracha.dir/TargetProcessor.cpp.o"

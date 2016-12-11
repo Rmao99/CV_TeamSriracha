@@ -6,7 +6,7 @@
 #include "Target.hpp"
 #include "TargetDetector.hpp"
 #include "TargetProcessor.hpp"
-//#include "NetworkController.hpp"
+#include "NetworkController.hpp"
 #include "VideoDevice.hpp"
 
 int main(int argc, char* argv[])
@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
 	TargetDetector detectorCross;
 	TargetDetector detectorHighGoal;
 	TargetProcessor processor;
-	//NetworkController networkController;
+	NetworkController networkController;
   VideoDevice camera;
 	CmdLineInterface interface(argc, argv);
 	AppConfig config = interface.getConfig();
@@ -27,8 +27,8 @@ int main(int argc, char* argv[])
 		std::cout << "Camera is ready\n";
 	}
 
-    //if(config.getIsNetworking())
-    //    networkController.startServer();
+    if(config.getIsNetworking())
+        networkController.startServer();
 
     cv::Mat image;
 
@@ -43,8 +43,8 @@ int main(int argc, char* argv[])
 	        if(config.getIsDebug())
 	            std::cout << "While Loop #" << loop << std::endl;
 
-			//if(config.getIsNetworking())
-	        //	networkController.waitForPing();
+			if(config.getIsNetworking())
+	      	networkController.waitForPing();
 
 			image = camera.getImage();
 
@@ -88,7 +88,7 @@ int main(int argc, char* argv[])
 	            if(config.getIsDebug())
 	                std::cout << "Image Being Processed" << std::endl;
 
-	            processor.loadTarget(targetC, 56);
+	            processor.loadTarget(targetC, 35);
 							// 56 should be changed to the object's real width
 
 	            if(config.getIsDebug())
@@ -128,13 +128,13 @@ int main(int argc, char* argv[])
 
 	                imshow("General", background);
 
-	          /*      if (config.getIsNetworking())
+	                if (config.getIsNetworking())
 				    {
 			            networkController.sendMessage("true;" +
 			            boost::lexical_cast<std::string> (distance) + ";" +
 						boost::lexical_cast<std::string> (azimuth) + ";" +
 						boost::lexical_cast<std::string> (altitude));
-				}*/
+				}
 
 				if(config.getIsDebug()){
 	            	std::cout << "Target Found! Distance: " << distance;
@@ -145,8 +145,8 @@ int main(int argc, char* argv[])
 	        }
 	        else
 	        {
-	            /*if (config.getIsNetworking())
-	                networkController.sendMessage("false;");*/
+	            if (config.getIsNetworking())
+	                networkController.sendMessage("false;");
 	        }
 
 					if(foundHighGoal)
@@ -158,7 +158,7 @@ int main(int argc, char* argv[])
 							if(config.getIsDebug())
 									std::cout << "Image Being Processed" << std::endl;
 
-							processor.loadTarget(targetS, 56);
+							processor.loadTarget(targetS, 41.5);
 							// 56 should be changed to object's real width
 
 							if(config.getIsDebug())
@@ -198,13 +198,13 @@ int main(int argc, char* argv[])
 
 									imshow("General", background);
 
-						/*      if (config.getIsNetworking())
+						      if (config.getIsNetworking())
 						{
 									networkController.sendMessage("true;" +
 									boost::lexical_cast<std::string> (distance) + ";" +
 						boost::lexical_cast<std::string> (azimuth) + ";" +
 						boost::lexical_cast<std::string> (altitude));
-				}*/
+				}
 
 				if(config.getIsDebug()){
 								std::cout << "Target Found! Distance: " << distance;
@@ -215,8 +215,8 @@ int main(int argc, char* argv[])
 					}
 					else
 					{
-							/*if (config.getIsNetworking())
-									networkController.sendMessage("false;");*/
+							if (config.getIsNetworking())
+									networkController.sendMessage("false;");
 					}
 
 

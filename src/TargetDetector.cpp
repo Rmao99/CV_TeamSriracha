@@ -40,7 +40,7 @@ std::vector<Point> TargetDetector::getTarget(cv::Mat img, int corners) {
   valResult = threshLower & threshUpper;
 
   result = hueResult & valResult;
-
+  imshow("result", result);
   Mat edges;
   std::vector<std::vector<Point> > contours;
 
@@ -56,9 +56,9 @@ std::vector<Point> TargetDetector::getTarget(cv::Mat img, int corners) {
 // 500 should be changed after testing
 // 2000 should be changed after testing
 
-    if ( ( (approxContour.size() == corners) || ( (corners == 4) && (contours[i][1].y >= 200) ) ) && (cv::contourArea(approxContour, false) > 100) ) {
-      double maxCosine = 0;
-      for (int j = 2; j<=4; j++) {
+    if ( ( (approxContour.size() == corners) || ( (approxContour.size() == corners) && (corners == 4) /*&& (contours[i][1].y >= 200)*/ ) ) && (cv::contourArea(approxContour, false) > 400) ) {
+    //  double maxCosine = 0;
+    /*  for (int j = 2; j<=4; j++) {
         double cosine;
         try {
           cosine = fabs(cos(angle(approxContour.at(j%4), approxContour.at(j-2), approxContour.at(j-1))));
@@ -67,14 +67,14 @@ std::vector<Point> TargetDetector::getTarget(cv::Mat img, int corners) {
           std::cout << e.what();
         }
         maxCosine = MAX(maxCosine, cosine);
-      }
+      } */
 
-      if(maxCosine < .2) {
+    //  if(maxCosine < .2) {
 
       cv::drawContours(img, contours, i , Scalar(255,0,0), 5);
       std::cout << "y-coordinate of first contour: " << contours[i][1].y << "\n";
       return approxContour;
-      }
+    //  }
     }
 
   }

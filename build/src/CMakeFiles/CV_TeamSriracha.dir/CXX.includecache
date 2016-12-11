@@ -38,6 +38,32 @@ CmdLineInterface.hpp
 AppConfig.hpp
 /home/option16/Documents/CV_TeamSriracha/src/AppConfig.hpp
 
+/home/option16/Documents/CV_TeamSriracha/src/NetworkController.cpp
+cstdlib
+-
+cstring
+-
+string
+-
+cstdlib
+-
+cstring
+-
+string
+-
+vector
+-
+iostream
+-
+boost/asio.hpp
+-
+NetworkController.hpp
+/home/option16/Documents/CV_TeamSriracha/src/NetworkController.hpp
+
+/home/option16/Documents/CV_TeamSriracha/src/NetworkController.hpp
+boost/asio.hpp
+-
+
 /home/option16/Documents/CV_TeamSriracha/src/Target.cpp
 iostream
 -
@@ -105,6 +131,8 @@ TargetDetector.hpp
 /home/option16/Documents/CV_TeamSriracha/src/TargetDetector.hpp
 TargetProcessor.hpp
 /home/option16/Documents/CV_TeamSriracha/src/TargetProcessor.hpp
+NetworkController.hpp
+/home/option16/Documents/CV_TeamSriracha/src/NetworkController.hpp
 VideoDevice.hpp
 /home/option16/Documents/CV_TeamSriracha/src/VideoDevice.hpp
 

@@ -8,6 +8,9 @@ src/CMakeFiles/CV_TeamSriracha.dir/CmdLineInterface.cpp.o: ../src/AppConfig.hpp
 src/CMakeFiles/CV_TeamSriracha.dir/CmdLineInterface.cpp.o: ../src/CmdLineInterface.cpp
 src/CMakeFiles/CV_TeamSriracha.dir/CmdLineInterface.cpp.o: ../src/CmdLineInterface.hpp
 
+src/CMakeFiles/CV_TeamSriracha.dir/NetworkController.cpp.o: ../src/NetworkController.cpp
+src/CMakeFiles/CV_TeamSriracha.dir/NetworkController.cpp.o: ../src/NetworkController.hpp
+
 src/CMakeFiles/CV_TeamSriracha.dir/Target.cpp.o: ../src/Target.cpp
 src/CMakeFiles/CV_TeamSriracha.dir/Target.cpp.o: ../src/Target.hpp
 
@@ -23,6 +26,7 @@ src/CMakeFiles/CV_TeamSriracha.dir/VideoDevice.cpp.o: ../src/VideoDevice.hpp
 
 src/CMakeFiles/CV_TeamSriracha.dir/cv-sriracha.cpp.o: ../src/AppConfig.hpp
 src/CMakeFiles/CV_TeamSriracha.dir/cv-sriracha.cpp.o: ../src/CmdLineInterface.hpp
+src/CMakeFiles/CV_TeamSriracha.dir/cv-sriracha.cpp.o: ../src/NetworkController.hpp
 src/CMakeFiles/CV_TeamSriracha.dir/cv-sriracha.cpp.o: ../src/Target.hpp
 src/CMakeFiles/CV_TeamSriracha.dir/cv-sriracha.cpp.o: ../src/TargetDetector.hpp
 src/CMakeFiles/CV_TeamSriracha.dir/cv-sriracha.cpp.o: ../src/TargetProcessor.hpp

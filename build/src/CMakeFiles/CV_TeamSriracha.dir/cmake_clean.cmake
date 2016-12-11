@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CV_TeamSriracha.dir/TargetDetector.cpp.o"
   "CMakeFiles/CV_TeamSriracha.dir/Target.cpp.o"
   "CMakeFiles/CV_TeamSriracha.dir/TargetProcessor.cpp.o"
+  "CMakeFiles/CV_TeamSriracha.dir/NetworkController.cpp.o"
   "CV_TeamSriracha.pdb"
   "CV_TeamSriracha"
 )

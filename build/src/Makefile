@@ -179,6 +179,33 @@ CmdLineInterface.cpp.s:
 	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/CmdLineInterface.cpp.s
 .PHONY : CmdLineInterface.cpp.s
 
+NetworkController.o: NetworkController.cpp.o
+
+.PHONY : NetworkController.o
+
+# target to build an object file
+NetworkController.cpp.o:
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/NetworkController.cpp.o
+.PHONY : NetworkController.cpp.o
+
+NetworkController.i: NetworkController.cpp.i
+
+.PHONY : NetworkController.i
+
+# target to preprocess a source file
+NetworkController.cpp.i:
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/NetworkController.cpp.i
+.PHONY : NetworkController.cpp.i
+
+NetworkController.s: NetworkController.cpp.s
+
+.PHONY : NetworkController.s
+
+# target to generate assembly for a file
+NetworkController.cpp.s:
+	cd /home/option16/Documents/CV_TeamSriracha/build && $(MAKE) -f src/CMakeFiles/CV_TeamSriracha.dir/build.make src/CMakeFiles/CV_TeamSriracha.dir/NetworkController.cpp.s
+.PHONY : NetworkController.cpp.s
+
 Target.o: Target.cpp.o
 
 .PHONY : Target.o
@@ -329,6 +356,9 @@ help:
 	@echo "... CmdLineInterface.o"
 	@echo "... CmdLineInterface.i"
 	@echo "... CmdLineInterface.s"
+	@echo "... NetworkController.o"
+	@echo "... NetworkController.i"
+	@echo "... NetworkController.s"
 	@echo "... Target.o"
 	@echo "... Target.i"
 	@echo "... Target.s"
