@@ -29,12 +29,12 @@ std::vector<Point> TargetDetector::getTarget(cv::Mat img, int corners) {
   Mat hueResult;
   Mat result;
 
-  threshold(hueOrig, threshLower, 0, 255, CV_THRESH_BINARY);
-  threshold(hueOrig, threshUpper, 102, 255, CV_THRESH_BINARY_INV);
+  threshold(hueOrig, threshLower, 130, 255, CV_THRESH_BINARY);
+  threshold(hueOrig, threshUpper, 255, 255, CV_THRESH_BINARY_INV);
 
   hueResult = threshLower & threshUpper;
 
-  threshold(valOrig, threshLower, 227, 255, CV_THRESH_BINARY);
+  threshold(valOrig, threshLower, 0, 255, CV_THRESH_BINARY);
   threshold(valOrig, threshUpper, 255, 255, CV_THRESH_BINARY_INV);
 
   valResult = threshLower & threshUpper;
@@ -57,7 +57,7 @@ std::vector<Point> TargetDetector::getTarget(cv::Mat img, int corners) {
 // 2000 should be changed after testing
 
 
-    if ( (approxContour.size() == corners) && (corners == 4) && (contours[i][1].y >= 200) && (cv::contourArea(approxContour, false) > 400) ) {
+    if ( (approxContour.size() == corners) && (corners == 4) && (contours[i][1].y >= 0) && (cv::contourArea(approxContour, false) > 400) ) {
       double maxCosine = 0;
       for (int j = 2; j<=4; j++) {
         double cosine;

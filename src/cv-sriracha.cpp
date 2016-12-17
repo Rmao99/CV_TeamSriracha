@@ -87,7 +87,7 @@ int main(int argc, char* argv[])
 				if(config.getIsDebug())
 					std::cout << "Image Being Processed" << std::endl;
 
-					processor.loadTarget(targetS, 41.5, image);
+					processor.loadTarget(targetS, 40.5, image);
 					// 56 should be changed to object's real width
 
 				if(config.getIsDebug())
