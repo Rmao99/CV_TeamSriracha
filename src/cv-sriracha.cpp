@@ -85,11 +85,13 @@ int main(int argc, char* argv[])
 
 	            std::cout <<"Cross was found " << std::endl;
 
+
+
 	            if(config.getIsDebug())
 	                std::cout << "Image Being Processed" << std::endl;
 
-	            processor.loadTarget(targetC, 35);
-							// 56 should be changed to the object's real width
+	            processor.loadTarget(targetC, 35, image);
+							// 35 should be changed to the object's real width
 
 	            if(config.getIsDebug())
 	                std::cout << "Target Loaded" << std::endl;
@@ -158,7 +160,7 @@ int main(int argc, char* argv[])
 							if(config.getIsDebug())
 									std::cout << "Image Being Processed" << std::endl;
 
-							processor.loadTarget(targetS, 41.5);
+							processor.loadTarget(targetS, 41.5, image);
 							// 56 should be changed to object's real width
 
 							if(config.getIsDebug())

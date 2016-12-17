@@ -93,6 +93,8 @@ iostream
 /home/option16/Documents/CV_TeamSriracha/src/TargetProcessor.cpp
 iostream
 -
+opencv2/opencv.hpp
+-
 TargetProcessor.hpp
 /home/option16/Documents/CV_TeamSriracha/src/TargetProcessor.hpp
 Target.hpp

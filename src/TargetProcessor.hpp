@@ -8,17 +8,17 @@
 class TargetProcessor
 {
 public:
-  TargetProcessor(double focalLength=415.0, double imageWidth=480.0, double imageHeight=240.0);
-  void loadTarget(Target *target, double realWidth);
+  TargetProcessor(double focalLength=415.0);
+  void loadTarget(Target *target, double realWidth, cv::Mat img);
   double calcDistance();
   double calcAzimuthX();
   double calcAzimuthY();
 
 private:
   double m_focalLength;
-  double m_imageWidth;
   double m_realWidth;
-  double m_imageHeight;
+  double m_picWidth;
+  double m_picHeight;
   double width;
   double height;
   double centerX;
