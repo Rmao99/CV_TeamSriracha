@@ -71,7 +71,8 @@ int main (int argc, char* argv[])
     tcp::socket s(io_service);
     tcp::resolver resolver(io_service);
     boost::asio::connect(s, resolver.resolve({host, port}));
-
+    std::string msg = ';';
+    
     while(true)
     {
       boost::asio::streambuf buffer;
@@ -93,12 +94,49 @@ int main (int argc, char* argv[])
       if(split[0] == "true")
       {
         std::cout << "Found target" << std::endl;
+        char goal = '0';
         char dist = (char) std::atoi(split[1].c_str());
         char azimuth = (char) std::atoi(split[2].c_str());
         char altitude = (char) std::atoi(split[3].c_str());
-        std::string msg({';', dist, azimuth, altitude});
-        std::cout << "Sending message: " << msg << std::endl;
+        
+        msg += goal;
+        msg += dist;
+        msg += azimuth;
+        msg += altitude;
+        
+        if(split[4] == true)
+        {
+            char cross = '1';
+            char dist = (char) std::atoi(split[5].c_str());
+            char azimuth = (char) std::atoi(split[6].c_str());
+            char altitude = (char) std::atoi(split[7].c_str());
+        
+            msg += cross;
+            msg += dist;
+            msg += azimuth;
+            msg += altitude;
+            
+       }
       }
+      else
+      {
+        if(split[1] == true)
+        {
+          std::cout << "Found target" << std::endl;
+          
+          char cross = '1';
+          char dist = (char) std::atoi(split[2].c_str());
+          char azimuth = (char) std::atoi(split[3].c_str());
+          char altitude = (char) std::atoi(split[4].c_str());
+          
+          msg += cross;
+          msg += dist;
+          msg += azimuth;
+          msg += altitude;
+        }
+      }
+      
+      RS232_cputs(serial, msg.c_str())
     }
   }
   catch (std::exception& e)

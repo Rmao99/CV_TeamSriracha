@@ -56,6 +56,7 @@ std::vector<Point> TargetDetector::getTarget(cv::Mat img, int corners) {
 // 500 should be changed after testing
 // 2000 should be changed after testing
 
+
     if ( (approxContour.size() == corners) && (corners == 4) && (contours[i][1].y >= 200) && (cv::contourArea(approxContour, false) > 400) ) {
       double maxCosine = 0;
       for (int j = 2; j<=4; j++) {
@@ -69,21 +70,21 @@ std::vector<Point> TargetDetector::getTarget(cv::Mat img, int corners) {
         maxCosine = MAX(maxCosine, cosine);
       }
 
-      if(maxCosine < .2) {
-
-        cv::drawContours(img, contours, i , Scalar(255,0,0), 5);
-        std::cout << "y-coordinate of first contour: " << contours[i][1].y << "\n";
-        return approxContour;
+        if(maxCosine < .2)
+        {
+          cv::drawContours(img, contours, i , Scalar(255,0,0), 5);
+          std::cout << "y-coordinate of first contour: " << contours[i][1].y << "\n";
+          return approxContour;
+        }
       }
 
-      if ( (approxContour.size() == corners) && (corners == 8) && (cv::contourArea(approxContour, false) > 400) ) {
-        cv::drawContours(img, contours, i , Scalar(255,0,0), 5);
+      if ( (approxContour.size() == corners) && (corners == 12) && (cv::contourArea(approxContour, false) > 400) ) {
+        cv::drawContours(img, contours, i , Scalar(0,255,0), 5);
         std::cout << "y-coordinate of first contour: " << contours[i][1].y << "\n";
         return approxContour;
       }
 
     }
 
-  }
   return std::vector<Point>();
 }
