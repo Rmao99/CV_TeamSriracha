@@ -71,7 +71,7 @@ int main (int argc, char* argv[])
     tcp::socket s(io_service);
     tcp::resolver resolver(io_service);
     boost::asio::connect(s, resolver.resolve({host, port}));
-    std::string msg = ';';
+    std::string msg = "";
 
     while(true)
     {
@@ -104,7 +104,7 @@ int main (int argc, char* argv[])
         msg += azimuth;
         msg += altitude;
 
-        if(split[4] == 'true')
+        if(split[4] == "true")
         {
             char cross = '1';
             char dist = (char) std::atoi(split[5].c_str());
@@ -120,7 +120,7 @@ int main (int argc, char* argv[])
       }
       else
       {
-        if(split[1] == 'true')
+        if(split[1] == "true")
         {
           std::cout << "Found target" << std::endl;
 
